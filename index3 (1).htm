@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home Page</title>
+<style>
+    body {
+        margin: 0; /* Remove default margin */
+        font-family: Arial, sans-serif; /* Use a preferred font */
+    }
+    header {
+        background-color: #020618; /* Background color of the banner */
+        color: #fff; /* Text color of the banner */
+        padding: 20px; /* Padding around content within the banner */
+        text-align: center; /* Center-align text within the banner */
+        position: relative; /* Make header position relative for button positioning */
+    }
+
+    header h1 {
+        font-size: 18px; /* Change font size of h1 */
+    }
+
+    .social-media-icons {
+        text-align: center; /* Center-align social media icons */
+        margin-top: 20px; /* Add margin space from the header */
+    }
+    .social-media-icons .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        background-color: #020618;
+        color: white;
+        border-radius: 5px; /* Make icons squared */
+    }
+    .fa:hover {
+        opacity: 0.7;
+    }
+    .fa-facebook:hover {
+        background-color: #3b5998; /* Change background color on hover */
+    }
+    .fa-twitter:hover {
+        background-color: #00aced; /* Change background color on hover */
+    }
+    .fa-youtube:hover {
+        background-color: #bb0000; /* Change background color on hover */
+    }
+    .fa-snapchat-ghost:hover {
+        background-color: #fffc00; /* Change background color on hover */
+    }
+    nav {
+        background-color: #333; /* Background color of the navigation */
+        color: #fff; /* Text color of the navigation */
+        text-align: center; /* Center-align text within the navigation */
+        padding: 20px 0; /* Adjusted padding around content within the navigation */
+    }
+    nav ul {
+        list-style-type: none; /* Remove bullet points */
+        margin: 0;
+        padding: 0;
+    }
+    nav li {
+        display: inline; /* Display list items horizontally */
+        margin-right: 20px; /* Add spacing between list items */
+    }
+    nav li a {
+        color: #fff; /* Text color of navigation links */
+        text-decoration: none; /* Remove underline from links */
+        padding: 15px 20px; /* Adjusted padding for navigation buttons */
+    }
+    nav li a:hover {
+        background-color: #070202; /* Change background color on hover */
+    }
+    .signup-button {
+        position: absolute; /* Position the button */
+        top: 20px; /* Distance from the top of the page */
+        right: 20px; /* Distance from the right of the page */
+        padding: 10px 20px; /* Padding around the button text */
+        background-color: #4CAF50; /* Button background color */
+        color: white; /* Button text color */
+        border: none; /* Remove button border */
+        border-radius: 5px; /* Rounded corners */
+        cursor: pointer; /* Cursor style on hover */
+    }
+    .signup-button:hover {
+        background-color: #45a049; /* Darker green on hover */
+    }
+    .signup-form {
+        display: none; /* Hide the form by default */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #f2f2f2;
+        padding: 20px;
+        border-radius: 5px;
+    }
+    .signup-form input[type="text"],
+    .signup-form input[type="password"],
+    .signup-form button {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<header>
+    <img src="logonew-removebg-preview.png" width="248" height="195" alt=""/>
+    <h1>Welcome to the Hot Beans</h1>
+    <button class="signup-button" onclick="toggleSignupForm()">Sign Up</button>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index3 (1).htm">Home</a></li>
+        <li><a href="Job_specifications.htm">Job Specifications</a></li>
+        <li><a href="courses.htm">Courses</a></li>
+        <li><a href="contacts.htm">Contacts</a></li>
+        <li><a href="about_us.htm">About Us</a></li>
+    </ul>
+</nav>
+
+<div class="signup-form" id="signupForm">
+    <h2>Sign Up / Login</h2>
+    <input type="text" placeholder="Email">
+    <input type="password" placeholder="Password">
+    <button onclick="signup()">Sign Up / Login</button>
+</div>
+
+<script>
+function toggleSignupForm() {
+    var form = document.getElementById("signupForm");
+    form.style.display = (form.style.display === "none") ? "block" : "none";
+}
+
+function signup() {
+    // Here you can add your signup/login functionality
+    // For demonstration purposes, let's just alert the inputs
+    var email = document.querySelector('.signup-form input[type="text"]').value;
+    var password = document.querySelector('.signup-form input[type="password"]').value;
+    alert("Email: " + email + "\nPassword: " + password);
+}
+</script>
+
+<div class="social-media-icons">
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('logoRollover','','logonew-removebg-preview.png',1)"><img src="How-to-Improve-Teamwork-and-Collaboration-Skills0A.jpeg" alt="" width="230" height="150" id="logoRollover"></a>
+    <div>Introducing Hot Beans, a cutting-edge software solution developed by a team of tech enthusiasts led by CEO Sarah Chen. Hot Beans was conceptualized with the vision of revolutionizing the way businesses manage and analyze data, offering a dynamic platform for real-time insights and streamlined operations. With its intuitive interface and advanced algorithms, Hot Beans empowers organizations to harness the full potential of their data, driving innovation and growth in today's competitive landscape. &nbsp;
+</div>
+ <h2>Follow us on social media</h2>
+    <!-- Add font awesome icons -->
+    <a href="https://about.x.com/en" class="fa fa-facebook"></a>
+    <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+    <a href="https://snap.com/en-GB" class="fa fa-snapchat-ghost"></a>
+    <a href="#https://about.x.com/en" class="fa fa-twitter"></a>
+</div>
+
+<div class="audio-player">
+    <audio controls>
+        <source src="Homes.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</div>
+
+</body>
+</html>
+
+
+
+

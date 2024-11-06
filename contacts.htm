@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacts page</title>
+<style>
+    body {
+        margin: 0; /* Remove default margin */
+        font-family: Arial, sans-serif; /* Use a preferred font */
+        font-size: 18px; /* Set font size to 18px */
+    }
+    header {
+        background-color: #020618; /* Background color of the banner */
+        color: #fff; /* Text color of the banner */
+        padding: 20px; /* Padding around content within the banner */
+        text-align: center; /* Center-align text within the banner */
+    }
+    nav {
+        background-color: #333; /* Background color of the navigation */
+        color: #fff; /* Text color of the navigation */
+        padding: 20px; /* Padding around content within the navigation */
+    }
+    nav ul {
+        list-style-type: none; /* Remove bullet points */
+        margin: 0;
+        padding: 0;
+        text-align: center; /* Center-align list items */
+    }
+    nav li {
+        display: inline-block; /* Display list items horizontally */
+        margin-right: 20px; /* Add spacing between list items */
+    }
+    nav li a {
+        color: #fff; /* Text color of navigation links */
+        text-decoration: none; /* Remove underline from links */
+        padding: 10px; /* Add padding to links */
+        font-size: 18px; /* Set font size to match the courses page */
+    }
+    nav li a:hover {
+        background-color: #070202; /* Background color on hover */
+    }
+    .signup-button {
+        position: absolute; /* Position the button */
+        top: 10px; /* Distance from the top of the page */
+        right: 10px; /* Distance from the right of the page */
+        padding: 10px 20px; /* Padding around the button text */
+        background-color: #4CAF50; /* Button background color */
+        color: white; /* Button text color */
+        border: none; /* Remove button border */
+        border-radius: 5px; /* Rounded corners */
+        cursor: pointer; /* Cursor style on hover */
+        font-size: 18px; /* Set font size to match the courses page */
+    }
+    h1 {
+        font-size: 18px; /* Reduce font size to 18px */
+    }
+</style>
+</head>
+<body>
+    <header>
+      <h1><a href="index3 (1).htm"><img src="logonew-removebg-preview.png" width="279" height="200" alt=""/></a></h1>
+        <h1>Welcome to the Contacts page</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index3 (1).htm">Home</a></li>
+            <li><a href="Job_specifications.htm">Job Specifications</a></li>
+            <li><a href="courses.htm">Courses</a></li>
+            <li><a href="contacts.htm">Contacts</a></li>
+            <li><a href="about_us.htm">About Us</a></li>
+        </ul>
+    </nav>
+
+    <button class="signup-button">Sign Up</button>
+
+    <!-- The rest of your content goes here -->
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign Up Button</title>
+<style>
+    body {
+        margin: 0; /* Remove default margin */
+        font-family: Arial, sans-serif; /* Use a preferred font */
+    }
+    .signup-button {
+        position: absolute; /* Position the button */
+        top: 10px; /* Distance from the top of the page */
+        right: 10px; /* Distance from the right of the page */
+        padding: 10px 20px; /* Padding around the button text */
+        background-color: #4CAF50; /* Button background color */
+        color: white; /* Button text color */
+        border: none; /* Remove button border */
+        border-radius: 5px; /* Rounded corners */
+        cursor: pointer; /* Cursor style on hover */
+    }
+</style>
+</head>
+<body>
+    <button class="signup-button">Sign Up</button>
+    <!-- The rest of your content goes here -->
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  padding: 5px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<button onclick="myFunction()">Toggle dark mode</button>
+
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+.container {
+  display: flex;
+  border-radius: 5px;
+  background-color: #020618;
+  padding: 20px;
+}
+
+.form-details {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.form-image {
+  flex: 1;
+}
+
+input[type=text], select, textarea {
+  width: calc(100% - 24px); /* Adjusted width for input fields */
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.image-box {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.image-box img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.label-yellow {
+  color: yellow;
+}
+</style>
+</head>
+<body>
+
+<h3>Contact Form</h3>
+
+<div class="container">
+  <div class="form-details">
+    <form id="contactForm">
+      <label class="label-yellow" for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+      <label class="label-yellow" for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+      <label class="label-yellow" for="country">Country</label>
+      <select id="country" name="country">
+        <option value="australia">Australia</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+      </select>
+
+      <label class="label-yellow" for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+ 
+  <div class="form-image">
+    <div class="image-box"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22254.750392139213!2d-0.07031009748122603!3d51.41351980147816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876015a3bb0bbf1%3A0x390cb609f7cd5609!2sHot%20Beans%20Web%20Development!5e0!3m2!1sen!2suk!4v1710602509051!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+    </div>
+  </div>
+</div>
+
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+  var fname = document.getElementById("fname").value;
+  var lname = document.getElementById("lname").value;
+  var country = document.getElementById("country").value;
+  var subject = document.getElementById("subject").value;
+  
+  if (fname !== "" || lname !== "" || country !== "" || subject !== "") {
+    alert("Thank you for submitting!");
+  }
+  
+  event.preventDefault();
+});
+</script>
+
+</body>
+</html>
+
+
